@@ -1,0 +1,18 @@
+<h3>Summary</h3>
+
+<div>
+  <span class="field-title"># large numbers</span>
+  <span ng-repeat="n in [0,1,2,3,4]">
+    <button class="btn btn-small" ng-click="setNumberOfLargeNumbers(n)" ng-class="{true:'btn-success',false:'btn-info'}[n==numberOfLargeNumbers]">{{n}}</button>
+  </span>
+</div>
+<br/>
+<table class="table table-striped">
+  <tbody>
+    <tr ng-repeat="r in rows" ng-class-odd="'tr-odd'" ng-class-even="'tr-even'" ng-init="rowIndex = $index">
+      <td ng-repeat="c in columns" ng-init="targetNumber = ($index+1)*100+rowIndex;" ng-style="{ backgroundColor: getColor(targetNumber) }">
+        {{targetNumber}}
+      </td>
+    </tr>
+  </tbody>
+</table>

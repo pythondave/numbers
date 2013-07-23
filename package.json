@@ -1,0 +1,16 @@
+{
+  "name": "numbers",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pythondave/numbers"
+  },
+  "author": "Ryan Randall",
+  "license": "BSD",
+  "gitHead": "c42926ed8e28fc181a25c68be564bed23d6c1c63"
+}
